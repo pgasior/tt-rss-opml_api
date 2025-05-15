@@ -24,7 +24,7 @@ class Opml_API extends Plugin {
 
 	function importOPML() {
 		Debug::log("Test log");
-		$opml = new Opml($_REQUEST);
+		$opml = new OPML($_REQUEST);
 
 		if (!isset($_REQUEST["opml"])) {
 			return array(API::STATUS_ERR,
